@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 //        인터넷에 있는 이미지를 glideTestImg를 통해 진행
-        Glide.with(this).load("https://i.pinimg.com/originals/1f/01/bd/1f01bd9b27592aab61bbc754414d1f49.jpg").into(glideTestImg)
+        Glide.with(this).load("http://i.pinimg.com/originals/1f/01/bd/1f01bd9b27592aab61bbc754414d1f49.jpg").into(glideTestImg)
         photoImg.setOnClickListener {
             val myIntent = Intent(this,ViewPhotoDetailActivity::class.java)
             startActivity(myIntent)
